@@ -2,8 +2,8 @@
 
 **Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-<brandonly@lostcoding.com>.**
-
+<brandonly@lostcoding.com>.** Test
+ 
 In the event that your report includes one of the people mentioned above please
 feel free to reach out to one of the other people listed instead.
 
