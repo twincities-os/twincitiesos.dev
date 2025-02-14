@@ -54,5 +54,3 @@ Then open the files in your IDE of choice and get hacking!
 [//]: # (- Learn how to [create a pull request]&#40;/contribute/create-pull-request.md&#41;.)
 
 [//]: # (- Read about the [architecture]&#40;architecture&#41;.)
-
-[//]: # (- Read through the [backend documentation]&#40;/contribute/backend/README.md&#41;.)
