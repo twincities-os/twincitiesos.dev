@@ -28,7 +28,7 @@ If you are running on Windows 10, we recommend installing the Windows Subsystem 
 
 We recommend using the Git command-line interface to download the source code for the twincitiesos.dev project:
 
-1. Reach out in [discord](https://discord.gg/awR9AWc6xx) and request permissions to the twincities-os organization.
+1. Reach out in [discord](https://discord.gg/awR9AWc6xx), or open an issue on github to request permissions to the twincities-os organization.
 2. Open a terminal and run `git clone https://github.com/twincities-os/twincitiesos.dev.git`. This command downloads twincitiesos.dev to a new `twincitiesos.dev` directory in your current directory.
 1. Open the `twincitiesos.dev` directory in your favorite code editor.
 
@@ -49,8 +49,8 @@ Then open the files in your IDE of choice and get hacking!
 ## Next steps
 @TODO
 
-[//]: # (- Read our [style guides]&#40;/contribute/style-guides&#41;.)
+- Read our [style guides](/contribute/style-guides).
 
-[//]: # (- Learn how to [create a pull request]&#40;/contribute/create-pull-request.md&#41;.)
+- Learn how to [create a pull request](/contribute/create-pull-request.md).
 
 [//]: # (- Read about the [architecture]&#40;architecture&#41;.)
