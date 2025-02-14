@@ -10,6 +10,12 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.2.1",
-    "astro": "^5.2.6"
+    "astro": "^5.2.6",
+    "astro-icon": "^1.1.5",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "sass": "^1.85.0",
+    "scss": "^0.2.4",
+    "the-new-css-reset": "^1.11.3"
   }
 }
