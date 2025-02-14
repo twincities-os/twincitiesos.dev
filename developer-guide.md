@@ -7,7 +7,7 @@ This guide helps you get started developing twincitiesos.dev.
 Make sure you have the following dependencies installed before setting up your developer environment:
 
 - [Git](https://git-scm.com/)
-- [pnpm](https://pnpm.io/)
+- [Pnpm](https://pnpm.io/)
 
 
 ### macOS
@@ -16,7 +16,7 @@ We recommend using [Homebrew](https://brew.sh/) for installing any missing depen
 
 ```
 brew install git
-brew install pnpmp
+brew install pnpm
 ```
 
 ### Windows
