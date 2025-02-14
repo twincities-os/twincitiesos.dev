@@ -1,19 +1,23 @@
 ---
-import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
+import styles from '../styles/scss/layouts/welcome.module.scss'
+import {DISCORD_LINK, MEETUP_LINK} from "../../constants";
+import { Icon } from 'astro-icon/components'
 ---
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
+<div class={styles.container}>
+	<img class={styles.background} src={background.src} alt="" fetchpriority="high" />
 	<main>
-		<section id="hero">
-
-			<h1>twincitiesos.dev</h1>
-			<h4>Twin Cities MN open source community</h4>
+		<section class={styles.hero}>
+			<h1 class={styles.title}>twincities<strong>os</strong>.dev</h1>
+			<h2>A Minnesota Twin Cities open source community</h2>
 			<p>An open group supporting open source projects and community engagement.</p>
 
-			<nav id="links">
-				<a href="https://www.meetup.com/twin-cities-open-source-developers/">Attend in person</a>
+			<nav class={styles.links}>
+				<a target="_blank" href={MEETUP_LINK}>Attend a meetup</a>
+				<a target="_blank" href={DISCORD_LINK}>Join our Discord
+					<Icon class=`${styles.discordIcon}` name="discord"/>
+				</a>
 			</nav>
 		</section>
 	</main>
