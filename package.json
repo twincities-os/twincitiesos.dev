@@ -6,7 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "biome check src",
+    "biome": "pnpm run lint",
+    "lint:write": "biome check --write src",
+    "biome:write": "pnpm run lint:write"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.2.1",
