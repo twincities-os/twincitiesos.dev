@@ -1,6 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
-import { DISCORD_LINK, MEETUP_LINK } from "../../constants";
+import { DISCORD_LINK, GITHUB_LINK, MEETUP_LINK } from "../../constants";
 import background from "../assets/background.svg";
 import styles from "../styles/scss/layouts/welcome.module.scss";
 ---
@@ -15,6 +15,9 @@ import styles from "../styles/scss/layouts/welcome.module.scss";
 
 			<nav class={styles.links}>
 				<a target="_blank" href={MEETUP_LINK}>Attend a meetup</a>
+				<a target="_blank" href={GITHUB_LINK}>View our Github
+					<Icon class=`${styles.linkIcon}` name="github"/>
+				</a>
 				<a target="_blank" href={DISCORD_LINK}>Join our Discord
 					<Icon class=`${styles.discordIcon}` name="discord"/>
 				</a>
