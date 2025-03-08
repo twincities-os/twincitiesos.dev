@@ -1,4 +1,8 @@
-# Astro Starter Kit: Basics
+# Twin Cities OS
+
+The repository for the [twincitiesos.dev](https://twincitiesos.dev/) site. Created using Astro!
+
+## Project Setup
 
 ```sh
 npm create astro@latest -- --template basics
