@@ -2,5 +2,11 @@
 $discordBlue: #7785cc;
 
 // animations
-$fastTransition: 150ms ease-in-out color
+$fastTransition: 150ms ease-in-out color;
 
+// fluid font sizes
+$smFontSizeFluid: clamp(.75rem, 2vw, 1rem);
+$mdFontSizeFluid: clamp(1rem, 4vw, 1.5rem);
+$lgFontSizeFluid: clamp(1.5rem, 6vw, 2rem);
+$xlFontSizeFluid: clamp(2rem, 9vw, 3.5rem);
+$xxlFontSizeFluid: clamp(3.5rem, 11vw, 3.75rem);
