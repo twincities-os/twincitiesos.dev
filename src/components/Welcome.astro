@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { DISCORD_LINK, GITHUB_LINK, MEETUP_LINK } from "../../constants";
 import background from "../assets/background.svg";
+import firstMeetup from "../assets/first-meetup.jpeg";
 import styles from "../styles/scss/layouts/welcome.module.scss";
 ---
 
@@ -13,6 +14,7 @@ import styles from "../styles/scss/layouts/welcome.module.scss";
 			<h2>A Minnesota Twin Cities open source community</h2>
 			<p>An open group supporting open source projects and community engagement.</p>
 
+
 			<nav class={styles.links}>
 				<a target="_blank" href={MEETUP_LINK}>Attend a meetup</a>
 				<a target="_blank" href={GITHUB_LINK}>View our Github
@@ -22,7 +24,11 @@ import styles from "../styles/scss/layouts/welcome.module.scss";
 					<Icon class=`${styles.discordIcon}` name="discord"/>
 				</a>
 			</nav>
+
+			
 		</section>
+		<img class={styles.firstMeetupImage} src={firstMeetup.src} alt="" fetchpriority="high" />
+
 	</main>
 </div>
 
