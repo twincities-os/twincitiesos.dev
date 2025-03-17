@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import background from "../../assets/background.svg";
+import styles from "../../styles/scss/layouts/blog.module.scss";
+
+const posts = await getCollection("blog");
+console.log(posts);
+---
+<Layout>
+	<img class={styles.background} src={background.src} alt="" fetchpriority="high" />
+    <main>
+        <h1>TCOS Blog</h1>
+        <ul>
+            {
+                posts.map(post => {
+                    return (
+                        <li>
+                            <a href={`/blog/${post.data.slug}`}>{post.data.title}</a>
+                        </li>
+                    );
+                })
+            }
+        </ul>
+    </main>
+</Layout>
