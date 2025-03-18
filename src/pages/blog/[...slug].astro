@@ -1,6 +1,8 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import styles from "../../styles/scss/layouts/blog.post.module.scss"
+import background from "../../assets/background.svg";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -12,16 +14,19 @@ export async function getStaticPaths() {
 
 type Props = CollectionEntry<"blog">;
 const post = Astro.props;
+const { Content } = await render(post);
 ---
 
 <Layout>
+	<img class={styles.background} src={background.src} alt="" fetchpriority="high" />
     <main>
         <section>
-            <div>
+            <div class={styles.blogTitle}>
                 <h1>{post.data.title}</h1>
                 <h2>By {post.data.author}</h2>
             </div>
-            <article>{post.body}</article>
+            <article><Content /></article>
         </section>
+        <a href="/blog">Back to blogs</a>
     </main>
 </Layout>
