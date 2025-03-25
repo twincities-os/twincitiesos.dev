@@ -7,7 +7,9 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"order-imports": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true --write",
-		"astro": "astro"
+		"astro": "astro",
+		"format": "biome format --write",
+		"prepare": "husky"
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^12.2.1",
@@ -20,6 +22,7 @@
 		"the-new-css-reset": "^1.11.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4"
+		"@biomejs/biome": "1.9.4",
+		"husky": "^9.1.7"
 	}
 }
