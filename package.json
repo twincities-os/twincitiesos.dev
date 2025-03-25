@@ -7,6 +7,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"order-imports": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true --write",
+		"format": "biome format --write",
 		"astro": "astro"
 	},
 	"dependencies": {
