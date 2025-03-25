@@ -1,0 +1,24 @@
+@use "../variables/variables" as *;
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, system-ui, sans-serif;
+    height: 100%;
+    padding-inline: 1rem;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(100px);
+}

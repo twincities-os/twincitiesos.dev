@@ -1,0 +1,32 @@
+---
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import background from "../../assets/background.svg";
+import Layout from "../../layouts/Layout.astro";
+import styles from "../../styles/scss/layouts/blog.post.module.scss";
+
+export async function getStaticPaths() {
+	const posts = await getCollection("blog");
+	return posts.map((post) => ({
+		params: { slug: post.data.slug },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<"blog">;
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout>
+	<img class={styles.background} src={background.src} alt="" fetchpriority="high" />
+    <main>
+        <section>
+            <div class={styles.blogTitle}>
+                <h1>{post.data.title}</h1>
+                <h2>By {post.data.author}</h2>
+            </div>
+            <article><Content /></article>
+        </section>
+        <a href="/blog">Back to blogs</a>
+    </main>
+</Layout>

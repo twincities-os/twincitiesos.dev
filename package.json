@@ -7,10 +7,12 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"order-imports": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true --write",
+		"format": "biome format --write",
 		"astro": "astro"
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^12.2.1",
+		"@astrojs/mdx": "^4.2.0",
 		"astro": "^5.2.6",
 		"astro-icon": "^1.1.5",
 		"autoprefixer": "^10.4.20",
