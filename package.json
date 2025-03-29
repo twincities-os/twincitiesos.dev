@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@astrojs/cloudflare": "^12.2.1",
+		"@astrojs/mdx": "^4.2.0",
 		"astro": "^5.2.6",
 		"astro-icon": "^1.1.5",
 		"autoprefixer": "^10.4.20",
