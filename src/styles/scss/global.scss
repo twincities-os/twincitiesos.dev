@@ -5,7 +5,11 @@ button, a {
   }
 }
 
-a{
+body {
+  font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, system-ui, sans-serif;
+}
+
+a {
   &:hover{
     text-decoration: underline;
   }
